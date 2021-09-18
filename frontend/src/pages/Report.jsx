@@ -3,6 +3,29 @@ import { NavLink as Link } from "react-router-dom";
 
 export class Report extends Component {
   state = { title:"", website: "", fraudType: "", description: "" , chkbox : false};
+
+  onformSubmit = async()=>{
+    if(!this.state.chkbox){
+      alert("Check the box");
+    }else{
+      const formData = {title:this.state.title,website:this.state.website,fraudType:this.state.fraudType,description:this.state.description};
+      const options = {
+        method:"PUT",
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+      }
+      let res = await fetch('./report',options);
+      let json = await res.json();
+      if(res.status === 200){
+        alert("Report submitted successfully");
+      }else{
+        alert("Report was not submitted successfully");
+      }
+    }
+  }
+
   render() {
     return (
       <div className="report">
@@ -81,7 +104,7 @@ export class Report extends Component {
             </span>
           </div>
           <div className="report-btn">
-            <button style={{"border-radius": "20px"}}>Report</button>
+            <button style={{"border-radius": "20px"}} onClick={this.onformSubmit}>Report</button>
           </div>
         </form>
         <span className="report-msg">
