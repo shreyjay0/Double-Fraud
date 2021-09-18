@@ -20,29 +20,41 @@
   margin-top: -2%;
 }
 
-.webscan-form{
+.webscan-form {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   margin-top: 4%;
-  width: 70%;
+  width: 100%;
 }
 
-.webscan-field{
+.webscan-field {
   border-color: black !important;
   border-radius: 20px !important;
   box-shadow: 3px 3px 8px grey !important;
-  width: 100%;  
+  margin-top: -3% !important;
+  height: 50px !important;
+  font-family: "Montserrat" !important;
+  font-size: 17px !important;
+  padding-left: 10px !important;
+  color: blue;
 }
 
-.webscan-field:focus{
-  border-color: black !important;
+.webscan-field:focus {
+  border-color: blue !important;
 }
 
-.submit-Btn{
-  width: 20%;
+.submit-Btn {
+  width: 15%;
   margin: 0;
   padding: 0 0 !important;
   border-radius: 20px !important;
+  color: rgb(59, 54, 54) !important;
+  border-color: rgb(78, 71, 71) !important;
+  font-family: "Montserrat" !important;
+}
+.submit-Btn:hover {
+  color: blue !important;
+  border-color: blue !important;
 }
