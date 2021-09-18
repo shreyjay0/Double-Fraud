@@ -52,7 +52,7 @@ export class Report extends Component {
               }}
             />
           </div>
-          <span className="form-field">
+          <div className="form-field">
             <span className="checkbox">
               <input
                 className="chkbox-input"
@@ -65,7 +65,7 @@ export class Report extends Component {
                 knowledge
               </span>
             </span>
-          </span>
+          </div>
         </form>
         <span className="report-msg">
           If not already, we suggest you to take{" "}

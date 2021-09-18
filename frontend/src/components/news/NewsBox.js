@@ -13,14 +13,16 @@ const useStyles = makeStyles({
     width: "100%",
   },
   cardbody: {
-    padding: 15,
+    padding: 12,
+    paddingBottom: "0px !important",
   },
+  button: { textAlign: "center" },
 });
 const NewsBox = (props) => {
   const classes = useStyles();
   const onClickMore = (e, id) => {
     props.history.push({
-      pathname: "full",
+      pathname: "full-news",
       search: `?id=${id}`,
     });
   };
@@ -43,15 +45,16 @@ const NewsBox = (props) => {
         </div>
         <div className={classes.cardbody}>
           <div>
-            <h4>{props.newsInfo.title}</h4>
-            <p>{props.newsInfo.content}</p>
+            <h5>{props.newsInfo.title}</h5>
+            <p style={{ fontWeight: "normal" }}>{props.newsInfo.content}</p>
           </div>
-          <input
-            type="submit"
-            value="read more"
-            style={{ position: "relative", left: "25%" }}
-            onClick={(e) => onClickMore(e, props.newsInfo.id)}
-          />
+          <div className={classes.button}>
+            <input
+              type="submit"
+              value="read more"
+              onClick={(e) => onClickMore(e, props.newsInfo.id)}
+            />
+          </div>
         </div>
       </div>
     </div>

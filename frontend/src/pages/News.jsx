@@ -1,7 +1,7 @@
 import React from "react";
 import NewsBox from "../components/news/NewsBox";
 import "../skeleton/skeleton.css";
-
+import "../css/news.css";
 const News = () => {
   const n = {
     id: 1333,
@@ -11,9 +11,9 @@ const News = () => {
     content: "Donald trump is going to rule space",
   };
   return (
-    <div>
-      <div className="row" style={{ textAlign: "center", marginTop: "5%" }}>
-        <h3>NEWS</h3>
+    <div className="news-main">
+      <div className="row news-head">
+        <h3> Financial News</h3>
         <p>Latest personalized financial news to keep you updated. </p>
       </div>
 
