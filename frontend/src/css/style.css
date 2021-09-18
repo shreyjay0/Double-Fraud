@@ -47,73 +47,126 @@
   text-decoration: none;
 }
 
-/* REPORT CSS*/
+/* HELP CSS*/
 
-.report {
-  margin: 0px 20%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+.help{
+    margin: 0px 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.report-head {
-  font-weight: bold;
-  font-size: 50px;
-  line-height: 61px;
+.help-head {
+  font-size: 3.5rem;
+  margin-top: 6%;
+}
+
+.help-desc {
+  font-size: 1.5rem;
+  text-align: center;
   margin-top: 2%;
 }
 
-.report-desc {
-  font-size: 1.5rem;
-  text-align: center;
-  margin-top: -2%;
+.help-map {
+  height: 50%;
 }
 
-.report-form {
-  margin-top: 3%;
-  width: 80%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  border: 1px solid black;
-  border-radius: 20px;
-  padding: 5%;
+.help-btn{
+    background-color: aliceblue;
+    border: 1px solid black;
+    font-size: 1.5rem;
+    border-radius: 30px;
+    padding: 0.5% 1%;
+    cursor: pointer;
 }
 
-.form-field {
-  width: 100%;
+/* REPORT CSS*/
+
+.report{
+    margin: 0px 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
-input,
-select,
-textarea {
-  width: 100%;
+.report-head{
+    font-size: 3.5rem;
+    margin-top: 6%;
 }
 
-.chkbox-input {
-  width: auto;
-  margin: 5px;
+.report-desc{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 2%;
 }
 
-<<<<<<< HEAD
+.report-form{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 5%;
+}
+
+.form-field{
+    width: 100%;
+}
+
+input, select, textarea{
+    width: 100%;
+}
+
+.chkbox-input{
+    width: auto;
+    margin: 5px;
+}
+
 .report-btn{
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
 }
 
 .report-msg{
     font-size: 1rem;
     padding: 0.5% 1%;
-=======
-.report-msg {
-  font-size: 1rem;
-  padding: 0.5% 1%;
->>>>>>> 59f61f427320415084543d1d2968dda55c01daf5
 }
 
 /* LIBRARY CSS*/
 
+.library{
+    margin: 0px 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.lib-head{
+    font-size: 3.5rem;
+    margin-top: 6%;
+}
+
+.lib-desc{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 2%;
+}
+
+
+/* FOOTER CSS*/
+
+.footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}

@@ -6,9 +6,9 @@ export class Library extends Component {
     render() {
         return (
             <div className="library">
-                <h1 className="lib-head">Nearby Help</h1>
-                <div className="lib-desc">Just experienced an online fraud? Dont worry, We got your back. Check out nearest police stations, law consultants, cyber cells and contact them. </div>   
-            
+                <h1 className="lib-head">Fraud Library</h1>
+                <div className="lib-desc">A realtime database of most recent frauds to keep you aware. </div>   
+                
             </div>
         )
     }
