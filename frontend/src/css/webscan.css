@@ -30,11 +30,19 @@
 }
 
 .webscan-field{
-  width: 100%;
+  border-color: black !important;
+  border-radius: 20px !important;
+  box-shadow: 3px 3px 8px grey !important;
+  width: 100%;  
+}
+
+.webscan-field:focus{
+  border-color: black !important;
 }
 
 .submit-Btn{
   width: 20%;
   margin: 0;
   padding: 0 0 !important;
+  border-radius: 20px !important;
 }
