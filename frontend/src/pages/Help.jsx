@@ -7,7 +7,7 @@ const Help = () => {
             <div className="help-desc">Just experienced an online fraud? Dont worry, We got your back. Check out nearest police stations, law consultants, cyber cells and contact them. </div>   
             {/*Map goes here */  }
             <div className="help-map"> </div>
-            <button className= "help-btn"> Get Numbers</button>
+            <button> Get Numbers</button>
         </div>
     )
 }
