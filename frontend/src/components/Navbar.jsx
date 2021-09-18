@@ -1,27 +1,28 @@
 import React from 'react';
 import { NavLink as Link } from 'react-router-dom';
+import "../css/style.css"
   
 const Navbar = () => {
   return (
       <div className="navbar">
-  
-        <div className="menu">
-          <Link to='/webscan' activeStyle>
-          webscan
-          </Link>
-          <Link to='/library' activeStyle>
-          library
-          </Link>
-          <Link to='/news' activeStyle>
-          news
-          </Link>
-          <Link to='/report' activeStyle>
-          report
-          </Link>
-          <Link to='/help' activeStyle>
-          help
-          </Link>
-        </div>
+          <span className="logo">DOUBLE<span className="logo-blue">FRAUD</span></span>
+          <div className="menu">
+            <Link to='/webscan' className="links">
+            webscan
+            </Link>
+            <Link to='/library' className="links">
+            library
+            </Link>
+            <Link to='/news' className="links">
+            news
+            </Link>
+            <Link to='/report' className="links">
+            report
+            </Link>
+            <Link to='/help' className="links">
+            help
+            </Link>
+          </div>
       </div>
   );
 };
