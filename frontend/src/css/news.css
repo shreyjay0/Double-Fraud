@@ -1,10 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 .news-main {
-  font-family: Montserrat;
+  font-family: "Montserrat";
   font-style: normal;
 }
 .news-head {
   text-align: center;
-  margin-top: 5%;
+  margin-top: 2%;
 }
 .news-head > h3 {
   font-weight: bold;
@@ -13,7 +14,7 @@
 }
 
 .news-head > p {
-  margin-top: -10px;
+  margin-top: -15px;
   font-weight: normal;
   font-size: 20px;
   line-height: 24px;

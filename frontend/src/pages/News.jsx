@@ -13,7 +13,7 @@ const News = () => {
   return (
     <div className="news-main">
       <div className="row news-head">
-        <h3>News</h3>
+        <h3> Financial News</h3>
         <p>Latest personalized financial news to keep you updated. </p>
       </div>
 
