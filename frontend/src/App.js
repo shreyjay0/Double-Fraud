@@ -12,7 +12,7 @@ import React, { Component } from 'react'
 
 export class App extends Component {
 
-  state = {reports:[]}
+  state = {reports:null}
 
   async componentDidMount() {
     // GET request using fetch with async/await

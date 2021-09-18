@@ -21,6 +21,7 @@ export class Library extends Component {
     }
 
     render() {
+        if(this.props.data){
         const dataSent = (this.props.data[this.state.ModalData]);
         return (
             <div className="library">
@@ -31,7 +32,17 @@ export class Library extends Component {
                 </div>
                 <Modal data={dataSent} show={this.state.showModal} closeModal={this.onModalClose}/>
             </div>
-        )
+        )}else{
+            return (
+                <div className="library">
+                <h1 className="lib-head">Fraud Library</h1>
+                <div className="lib-desc">A realtime crowdsourced database of most recent frauds to keep you aware. </div>   
+                <div className="lib-cards">
+                    Loading ....
+                </div>
+            </div>
+            )
+        }
     }
 
 }
