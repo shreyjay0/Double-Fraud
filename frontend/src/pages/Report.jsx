@@ -25,7 +25,7 @@ export class Report extends Component {
             />
           </div>
           <div className="form-field">
-            <label htmlFor="fraudtype">Fraudlent Website:</label>
+            <label htmlFor="fraudtype">Type Of Fraud:</label>
             <select
               name="fraudtype"
               id="fraudtype"
@@ -41,7 +41,7 @@ export class Report extends Component {
             </select>
           </div>
           <div className="form-field">
-            <label htmlFor="description">Fraudlent Website:</label>
+            <label htmlFor="description">Description:</label>
             <textarea
               type="text"
               name="description"

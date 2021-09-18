@@ -10,14 +10,16 @@ body {
 .help {
   margin: 0px 20%;
   display: flex;
-  margin-top: -3%;
+  margin-top: -2%;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 
 .help-head {
+  font-weight: bold;
   font-size: 50px;
+  line-height: 61px;
   margin-top: 6%;
 }
 
