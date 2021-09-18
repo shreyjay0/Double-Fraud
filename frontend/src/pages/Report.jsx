@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { NavLink as Link } from "react-router-dom";
 
 export class Report extends Component {
-  state = { website: "", fraudType: "", description: "" };
+  state = { website: "", fraudType: "", description: "" , chkbox : false};
   render() {
     return (
       <div className="report">
@@ -58,7 +58,9 @@ export class Report extends Component {
                 className="chkbox-input"
                 type="checkbox"
                 defaultChecked={this.state.chkbox}
-                onChange={this.handleChangeChk}
+                onChange={(e) => {
+                  this.setState({ chkbox: e.target.value });
+                }}
               />
               <span className="checkbox-msg">
                 I hereby confirm this report’s authenticity to the best of my
