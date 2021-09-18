@@ -19,12 +19,13 @@
 
 .logo {
   margin-left: 7%;
-  font-size: 2rem;
+  font-size: 32px;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 900;
+
+  font-weight: bolder;
 }
 .logo-blue {
   color: blue;
@@ -38,12 +39,13 @@
 }
 
 .links {
-  font-size: 1.2rem;
+  font-size: 15px;
   text-transform: uppercase;
   display: flex;
   align-items: center;
   justify-content: center;
   color: black;
+  font-weight: 600;
   text-decoration: none;
 }
 

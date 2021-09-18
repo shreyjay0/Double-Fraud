@@ -1,13 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
-* {
-  margin: 0px;
-  box-sizing: border-box;
-}
-body {
-  font-family: "Montserrat";
-}
-
-.help {
+.webscan {
   margin: 0px 20%;
   display: flex;
   margin-top: -2%;
@@ -15,24 +7,15 @@ body {
   justify-content: center;
   flex-direction: column;
 }
-
-.help-head {
+.webscan-head {
   font-weight: bold;
   font-size: 50px;
   line-height: 61px;
-  margin-top: 6%;
-}
 
-.help-desc {
+  margin-top: 15%;
+}
+.webscan-desc {
   font-size: 17px;
   text-align: center;
-  margin-top: 0%;
-}
-
-.help-map {
-  margin-top: 3%;
-  margin-bottom: 3%;
-  width: 100%;
-  height: 350px;
-  background-color: rgb(85, 176, 255);
+  margin-top: -3%;
 }

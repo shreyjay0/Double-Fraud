@@ -5,7 +5,7 @@ import "../css/style.css"
 const Navbar = () => {
   return (
       <div className="navbar">
-          <span className="logo">DOUBLE<span className="logo-blue">FRAUD</span></span>
+          <span className="logo">FIN<span className="logo-blue">FORGE</span></span>
           <div className="menu">
             <Link to='/webscan' className="links">
             webscan

@@ -30,7 +30,7 @@ export class Library extends Component {
         return (
             <div className="library">
                 <h1 className="lib-head">Fraud Library</h1>
-                <div className="lib-desc">A realtime database of most recent frauds to keep you aware. </div>   
+                <div className="lib-desc">A realtime crowdsourced database of most recent frauds to keep you aware. </div>   
                 <div className="lib-tablediv">
                     <table className="lib-table">
                         <thead>
