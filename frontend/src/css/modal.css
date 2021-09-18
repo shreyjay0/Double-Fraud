@@ -1,0 +1,52 @@
+.modal{
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-container{
+    position: relative;
+    background-color: white;
+    width: 65%;
+    height: 60%;
+    padding: 2%;
+    font-size: 2rem;
+}
+
+.modal-head{
+    text-align: center;
+}
+
+.modal-head, .website-text, .fraudType-text, .desc-text{
+font-weight: bold;
+}
+
+.modal-btn{
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    right: 4%;
+    top: 4%;
+    margin: 0px;
+    padding: 0px;
+    height: 25px;
+    width: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.fraudType{
+    color: red;
+    font-weight: bold;
+    text-transform: capitalize;
+}

@@ -4,9 +4,10 @@
     align-items: center;
     flex-direction: column;
     width: 30%;
-    height: 35vh;
+    height: 50vh;
     border: 1px solid black;
     box-shadow: 2px 2px 1px grey;
+    padding: 30px;
 }
 
 .libcard-head{
@@ -39,4 +40,11 @@
    -webkit-line-clamp: 3;
    overflow: hidden;
    margin: 5px;
+   padding-bottom: 5px;
+}
+
+.readmore-btn{
+    border-radius: 20px;
+    border: 1px solid black;
+    box-shadow: -2px 2px 5px grey;
 }

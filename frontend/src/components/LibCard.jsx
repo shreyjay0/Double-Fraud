@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import "../css/libcard.css"
 
 export class LibCard extends Component {
+
+
     render() {
         return (
             <div className="libcard">
@@ -9,7 +11,7 @@ export class LibCard extends Component {
                 <a href={this.props.data.website}>{this.props.data.website}</a>
                 <div className="libcard-type"><span className="type-text">TYPE</span><span className="type">{this.props.data.fraudType}</span></div>
                 <div className="libcard-desc">{this.props.data.description}</div>
-                <button className="readmore-btn">Read More..</button>
+                <button className="readmore-btn" onClick={()=>{this.props.modal(this.props.index)}}>Read More..</button>
             </div>
         )
     }

@@ -162,7 +162,7 @@ textarea {
 /* LIBRARY CSS*/
 
 .library {
-  margin: 0px 10%;
+  padding: 0 7%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -190,7 +190,7 @@ textarea {
     align-items: center;
     flex-basis: 100%;
     flex-wrap: wrap;
-    gap: 3em;
+    gap: 5em;
     /* @media (max-width: 50em) {
         padding-inline: 2em;
         gap: 2em;

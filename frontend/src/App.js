@@ -18,7 +18,6 @@ function App() {
         <Switch>
           <Route path="/webscan" component={Webscan} />
           <Route path="/library" render={(props) => <Library data={Data} />} />
-          {/* <Route path='/library' component={Library} /> */}
           <Route path="/news" component={News} />
           <Route path="/full-news" component={FullNews} />
           <Route path="/report" component={Report} />
