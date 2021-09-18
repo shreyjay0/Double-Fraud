@@ -31,6 +31,8 @@ export class Webscan extends Component {
               this.setState({ website: e.target.value });
             }}
           />
+          <br />
+          <br />
           <input type="submit" value="submit" className="submit-Btn"/>
         </form>
       </div>

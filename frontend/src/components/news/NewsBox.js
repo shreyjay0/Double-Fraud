@@ -1,4 +1,4 @@
-import React, { Component, useState, useEffect } from "react";
+import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { withRouter } from "react-router-dom";
 
@@ -8,22 +8,36 @@ const useStyles = makeStyles({
     boxSizing: "border-box",
     borderBottomLeftRadius: 20,
     borderBottomRightRadius: 20,
+    maxWidth: 350,
   },
   img: {
     width: "100%",
+    minHeight: "200px !important",
+    maxHeight: "200px !important",
+  },
+  imghead: {
+    minHeight: "200px !important",
+    maxHeight: "200px !important",
   },
   cardbody: {
     padding: 12,
     paddingBottom: "0px !important",
   },
-  button: { textAlign: "center" },
+  button: {
+    textAlign: "center",
+    fontFamily: "Montserrat",
+    fontStyle: "normal",
+  },
 });
 const NewsBox = (props) => {
   const classes = useStyles();
-  const onClickMore = (e, id) => {
+  let id = props.id;
+  let news = props.newsInfo;
+  const onClickMore = (e, full) => {
     props.history.push({
       pathname: "full-news",
-      search: `?id=${id}`,
+      search: `?id=${full.id}`,
+      state: { id, news },
     });
   };
   return (
@@ -36,9 +50,9 @@ const NewsBox = (props) => {
       }}
     >
       <div className={classes.card}>
-        <div>
+        <div className={classes.imghead}>
           <img
-            src={props.newsInfo.image}
+            src={props.newsInfo.urlToImage}
             alt={props.newsInfo.title}
             className={classes.img}
           ></img>
@@ -52,7 +66,8 @@ const NewsBox = (props) => {
             <input
               type="submit"
               value="read more"
-              onClick={(e) => onClickMore(e, props.newsInfo.id)}
+              style={{ width: 120 }}
+              onClick={(e) => onClickMore(e, props)}
             />
           </div>
         </div>
