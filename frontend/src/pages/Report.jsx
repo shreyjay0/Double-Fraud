@@ -68,6 +68,9 @@ export class Report extends Component {
               </span>
             </span>
           </div>
+          <div className="report-btn">
+            <button style={{"border-radius": "20px"}}>Report</button>
+          </div>
         </form>
         <span className="report-msg">
           If not already, we suggest you to take{" "}

@@ -126,8 +126,17 @@ input, select, textarea{
     margin: 5px;
 }
 
+.report-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
 
 .report-msg{
     font-size: 1rem;
     padding: 0.5% 1%;
 }
+
+/* LIBRARY CSS*/
+
