@@ -7,6 +7,7 @@ import Library from "./pages/Library";
 import Report from "./pages/Report";
 import Help from "./pages/Help";
 import Footer from './components/Footer';
+import Data from "./pages/dummyLib.json"
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
           <Navbar />
           <Switch>
             <Route path='/webscan' component={Webscan} />
-            <Route path='/library' component={Library} />
+            <Route path='/library' render={(props) => <Library data={Data}/>} />
+            {/* <Route path='/library' component={Library} /> */}
             <Route path='/news' component={News} />
             <Route path='/report' component={Report} />
             <Route path='/help' component={Help} />
