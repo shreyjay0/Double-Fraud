@@ -1,0 +1,42 @@
+.libcard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+    height: 35vh;
+    border: 1px solid black;
+    box-shadow: 2px 2px 1px grey;
+}
+
+.libcard-head{
+    font-weight: bold;
+
+}
+
+
+.libcard-type{
+    width: 100%;
+}
+
+.type-text{
+    font-weight: bold;
+    padding: 0px 15px;
+    float: left;
+}
+
+.type{
+    font-weight: bold;
+    float: right;
+    color: red;
+}
+
+.libcard-desc{
+    text-overflow: scroll;
+    height: 70%;
+    display: -webkit-box;
+   -webkit-box-orient: vertical;
+   -webkit-line-clamp: 3;
+   overflow: hidden;
+   margin: 5px;
+}

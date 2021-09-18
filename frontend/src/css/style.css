@@ -162,7 +162,7 @@ textarea {
 /* LIBRARY CSS*/
 
 .library {
-  margin: 0px 20%;
+  margin: 0px 10%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -181,4 +181,19 @@ textarea {
   text-align: center;
   margin-top: -2%;
   margin-bottom: 4%;
+}
+
+.lib-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    gap: 3em;
+    /* @media (max-width: 50em) {
+        padding-inline: 2em;
+        gap: 2em;
+    } */
+
 }
