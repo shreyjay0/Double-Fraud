@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { NavLink as Link } from "react-router-dom";
 
 export class Report extends Component {
-  state = { website: "", fraudType: "", description: "" , chkbox : false};
+  state = { title:"", website: "", fraudType: "", description: "" , chkbox : false};
   render() {
     return (
       <div className="report">
@@ -12,6 +12,18 @@ export class Report extends Component {
           alert{" "}
         </div>
         <form action="" className="report-form">
+        <div className="form-field">
+            <label htmlFor="title">Title:</label>
+            <input
+              type="text"
+              name="title"
+              id="title"
+              value={this.state.title}
+              onChange={(e) => {
+                this.setState({ title: e.target.value });
+              }}
+            />
+          </div>
           <div className="form-field">
             <label htmlFor="website">Fraudlent Website:</label>
             <input
