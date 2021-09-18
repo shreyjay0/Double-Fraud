@@ -23,6 +23,7 @@ export class Report extends Component {
       }else{
         alert("Report was not submitted successfully");
       }
+      this.setState({ title:"", website: "", fraudType: "", description: "" , chkbox : false})
     }
   }
 
