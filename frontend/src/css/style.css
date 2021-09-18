@@ -126,7 +126,6 @@ input, select, textarea{
     margin: 5px;
 }
 
-<<<<<<< HEAD
 .report-btn{
     display: flex;
     align-items: center;
@@ -137,6 +136,22 @@ input, select, textarea{
     font-size: 1rem;
     padding: 0.5% 1%;
 }
+
+.report-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-top: 3%;
+  margin-bottom: -6%;
+}
+
+.report-msg {
+  font-size: 1.2rem;
+  margin-top: -2%;
+  margin-bottom: 2%;
+}
+
 
 /* LIBRARY CSS*/
 
@@ -171,21 +186,3 @@ input, select, textarea{
     justify-content: center;
 
 }
-=======
-.report-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  margin-top: 3%;
-  margin-bottom: -6%;
-}
-
-.report-msg {
-  font-size: 1.2rem;
-  margin-top: -2%;
-  margin-bottom: 2%;
-}
-
-/* LIBRARY CSS*/
->>>>>>> 36ee797b470491e87d1a41e2ce50b1b6459cf223
