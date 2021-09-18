@@ -8,6 +8,7 @@ const useStyles = makeStyles({
     minHeight: "200px !important",
     maxHeight: "200px !important",
     maxWidth: 350,
+    borderRadius: 12,
   },
   imghead: {
     textAlign: "center",
@@ -15,9 +16,8 @@ const useStyles = makeStyles({
     maxHeight: "200px !important",
   },
   body: {
-    padding: 12,
     paddingBottom: "0px !important",
-    padding: "10%",
+    padding: "30%",
     textAlign: "center",
     paddingTop: "5% !important",
   },
@@ -28,6 +28,10 @@ const useStyles = makeStyles({
   },
   button: {
     marginTop: 30,
+  },
+  content: {
+    textAlign: "left",
+    marginBottom: 20,
   },
 });
 const FullNews = (props) => {
@@ -67,11 +71,11 @@ const FullNews = (props) => {
             className={classes.img}
           ></img>
           <div>
-            <a style={{ color: "#000" }}>Source: {source}</a>
+            <a style={{ color: "grey" }}>Source: {source}</a>
           </div>
         </div>
         <div className={classes.body}>
-          <div>{newsInfo.content}</div>
+          <div className={classes.content}>{newsInfo.content}</div>
           <a rel="noopener noreferrer" href={newsInfo.url} target="_blank">
             Read full article
           </a>
