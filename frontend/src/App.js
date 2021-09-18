@@ -12,7 +12,7 @@ function App() {
     <div className="App">
       <Router>
           <Navbar />
-          <Switch className="main">
+          <Switch>
             <Route path='/webscan' component={Webscan} />
             <Route path='/library' component={Library} />
             <Route path='/news' component={News} />

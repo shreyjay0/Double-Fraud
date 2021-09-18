@@ -48,7 +48,6 @@
 /* HELP CSS*/
 
 .help{
-
     margin: 0px 20%;
     display: flex;
     align-items: center;
@@ -79,4 +78,41 @@
     border-radius: 30px;
     padding: 0.5% 1%;
     cursor: pointer;
+}
+
+/* REPORT CSS*/
+
+.report{
+    margin: 0px 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.report-head{
+    font-size: 3.5rem;
+    margin-top: 6%;
+}
+
+.report-desc{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 2%;
+}
+
+.report-form{
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 5%;
+}
+
+.report-msg{
+    font-size: 1rem;
+    padding: 0.5% 1%;
 }
