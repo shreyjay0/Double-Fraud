@@ -49,12 +49,12 @@
 
 /* HELP CSS*/
 
-.help{
-    margin: 0px 20%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+.help {
+  margin: 0px 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .help-head {
@@ -72,69 +72,74 @@
   height: 50%;
 }
 
-.help-btn{
-    background-color: aliceblue;
-    border: 1px solid black;
-    font-size: 1.5rem;
-    border-radius: 30px;
-    padding: 0.5% 1%;
-    cursor: pointer;
+.help-btn {
+  background-color: aliceblue;
+  border: 1px solid black;
+  font-size: 1.5rem;
+  border-radius: 30px;
+  padding: 0.5% 1%;
+  cursor: pointer;
 }
 
 /* REPORT CSS*/
 
-.report{
-    margin: 0px 20%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+.report {
+  margin: 0px 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.report-head{
-    font-size: 3.5rem;
-    margin-top: 6%;
+.report-head {
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 61px;
+  margin-top: 1%;
 }
 
-.report-desc{
-    font-size: 1.5rem;
-    text-align: center;
-    margin-top: 2%;
+.report-desc {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: -2%;
+  margin-bottom: 2%;
 }
 
-.report-form{
-    width: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    border: 1px solid black;
-    border-radius: 20px;
-    padding: 5%;
+.report-form {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 5%;
 }
 
-.form-field{
-    width: 100%;
+.form-field {
+  width: 100%;
 }
 
-input, select, textarea{
-    width: 100%;
+input,
+select,
+textarea {
+  width: 100%;
 }
 
-.chkbox-input{
-    width: auto;
-    margin: 5px;
+.chkbox-input {
+  width: auto;
+  margin: 5px;
 }
 
-.report-btn{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.report-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.report-msg{
-    font-size: 1rem;
-    padding: 0.5% 1%;
+.report-msg {
+  font-size: 1rem;
+  padding: 0.5% 1%;
 }
 
 .report-btn {
@@ -152,37 +157,26 @@ input, select, textarea{
   margin-bottom: 2%;
 }
 
-
 /* LIBRARY CSS*/
 
-.library{
-    margin: 0px 20%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+.library {
+  margin: 0px 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.lib-head{
-    font-size: 3.5rem;
-    margin-top: 6%;
+.lib-head {
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 61px;
+  margin-top: 4%;
 }
 
-.lib-desc{
-    font-size: 1.5rem;
-    text-align: center;
-    margin-top: 2%;
-}
-
-
-/* FOOTER CSS*/
-
-.footer{
-    width: 100%;
-    position: absolute;
-    bottom: 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+.lib-desc {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: -2%;
+  margin-bottom: 4%;
 }

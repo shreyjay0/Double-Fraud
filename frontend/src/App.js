@@ -6,7 +6,7 @@ import News from "./pages/News";
 import Library from "./pages/Library";
 import Report from "./pages/Report";
 import Help from "./pages/Help";
-import Footer from './components/Footer';
+
 import Data from "./pages/dummyLib.json"
 
 function App() {
@@ -23,7 +23,7 @@ function App() {
             <Route path='/help' component={Help} />
           </Switch>
         </Router>
-        <Footer/>
+     
     </div>
   );
 }
