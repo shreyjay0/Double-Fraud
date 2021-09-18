@@ -32,6 +32,7 @@ const useStyles = makeStyles({
   content: {
     textAlign: "left",
     marginBottom: 20,
+  
   },
 });
 const FullNews = (props) => {
