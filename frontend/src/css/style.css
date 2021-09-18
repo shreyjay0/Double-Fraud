@@ -49,21 +49,12 @@
 
 /* HELP CSS*/
 
-<<<<<<< HEAD
 .help{
     margin: 0px 20%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-=======
-.help {
-  margin: 0px 20%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
->>>>>>> 6b6b2d404d684c2aa5b6707e56a19becf30f9396
 }
 
 .help-head {
@@ -81,7 +72,6 @@
   height: 50%;
 }
 
-<<<<<<< HEAD
 .help-btn{
     background-color: aliceblue;
     border: 1px solid black;
@@ -113,7 +103,7 @@
 }
 
 .report-form{
-    height: 50%;
+    width: 80%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -123,16 +113,21 @@
     padding: 5%;
 }
 
+.form-field{
+    width: 100%;
+}
+
+input, select, textarea{
+    width: 100%;
+}
+
+.chkbox-input{
+    width: auto;
+    margin: 5px;
+}
+
+
 .report-msg{
     font-size: 1rem;
     padding: 0.5% 1%;
-=======
-.help-btn {
-  background-color: aliceblue;
-  border: 1px solid black;
-  font-size: 1.5rem;
-  border-radius: 30px;
-  padding: 0.5% 1%;
-  cursor: pointer;
->>>>>>> 6b6b2d404d684c2aa5b6707e56a19becf30f9396
 }
