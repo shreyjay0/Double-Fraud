@@ -9,6 +9,7 @@ const useStyles = makeStyles({
     borderBottomLeftRadius: 20,
     borderBottomRightRadius: 20,
     maxWidth: 350,
+    minHeight: 540,
   },
   img: {
     width: "100%",
@@ -59,14 +60,14 @@ const NewsBox = (props) => {
         </div>
         <div className={classes.cardbody}>
           <div>
-            <h5>{props.newsInfo.title}</h5>
+            <h6 style={{ fontWeight: "bold" }}>{props.newsInfo.title}</h6>
             <p style={{ fontWeight: "normal" }}>{props.newsInfo.content}</p>
           </div>
           <div className={classes.button}>
             <input
               type="submit"
               value="read more"
-              style={{ width: 120 }}
+              style={{ width: 140 }}
               onClick={(e) => onClickMore(e, props)}
             />
           </div>
