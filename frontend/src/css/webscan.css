@@ -17,5 +17,24 @@
 .webscan-desc {
   font-size: 17px;
   text-align: center;
-  margin-top: -3%;
+  margin-top: -2%;
+}
+
+.webscan-form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 4%;
+  width: 70%;
+}
+
+.webscan-field{
+  width: 100%;
+}
+
+.submit-Btn{
+  width: 20%;
+  margin: 0;
+  padding: 0 0 !important;
 }
