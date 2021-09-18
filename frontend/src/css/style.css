@@ -47,87 +47,57 @@
   text-decoration: none;
 }
 
-/* HELP CSS*/
+/* REPORT CSS*/
 
-.help{
-    margin: 0px 20%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+.report {
+  margin: 0px 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.help-head {
-  font-size: 3.5rem;
-  margin-top: 6%;
-}
-
-.help-desc {
-  font-size: 1.5rem;
-  text-align: center;
+.report-head {
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 61px;
   margin-top: 2%;
 }
 
-.help-map {
-  height: 50%;
+.report-desc {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: -2%;
 }
 
-.help-btn{
-    background-color: aliceblue;
-    border: 1px solid black;
-    font-size: 1.5rem;
-    border-radius: 30px;
-    padding: 0.5% 1%;
-    cursor: pointer;
+.report-form {
+  margin-top: 3%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 5%;
 }
 
-/* REPORT CSS*/
-
-.report{
-    margin: 0px 20%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+.form-field {
+  width: 100%;
 }
 
-.report-head{
-    font-size: 3.5rem;
-    margin-top: 6%;
+input,
+select,
+textarea {
+  width: 100%;
 }
 
-.report-desc{
-    font-size: 1.5rem;
-    text-align: center;
-    margin-top: 2%;
+.chkbox-input {
+  width: auto;
+  margin: 5px;
 }
 
-.report-form{
-    width: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    border: 1px solid black;
-    border-radius: 20px;
-    padding: 5%;
-}
-
-.form-field{
-    width: 100%;
-}
-
-input, select, textarea{
-    width: 100%;
-}
-
-.chkbox-input{
-    width: auto;
-    margin: 5px;
-}
-
-
-.report-msg{
-    font-size: 1rem;
-    padding: 0.5% 1%;
+.report-msg {
+  font-size: 1rem;
+  padding: 0.5% 1%;
 }
