@@ -34,7 +34,7 @@ export class Login extends Component {
           <div className="form-field">
             <label htmlFor="mail">Email:</label>
             <input
-              type="text"
+              type="email"
               name="mail"
               id="mail"
               value={this.state.mail}
