@@ -8,7 +8,7 @@ export class Register extends Component {
   onformSubmit = async()=>{
       const formData = {name:this.state.name,mail:this.state.mail,pass:this.state.pass};
       const options = {
-        method:"PUT",
+        method:"POST",
         headers: {
           'Content-Type': 'application/json'
         },
@@ -31,7 +31,7 @@ export class Register extends Component {
         <div className="report-desc">We are happy to have you! </div>
         <form action="" className="report-form">
           <div className="form-field">
-            <label htmlFor="name">Title:</label>
+            <label htmlFor="name">Full Name:</label>
             <input
               type="text"
               name="name"
@@ -43,7 +43,7 @@ export class Register extends Component {
             />
           </div>
           <div className="form-field">
-            <label htmlFor="mail">Fraudlent Website:</label>
+            <label htmlFor="mail">Email:</label>
             <input
               type="text"
               name="mail"
@@ -55,9 +55,9 @@ export class Register extends Component {
             />
           </div>
           <div className="form-field">
-            <label htmlFor="pass">Type Of Fraud:</label>
+            <label htmlFor="pass">Password:</label>
             <input
-              type="text"
+              type="password"
               name="pass"
               id="pass"
               value={this.state.pass}
