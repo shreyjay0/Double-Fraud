@@ -12,7 +12,7 @@ import {
 const apiKey = "KEY_HERE";
 const LocateHelp = compose(
   withProps({
-    googleMapURL: `https://maps.googleapis.com/maps/api/js?key=${apiKey}&v=3.exp&libraries=geometry,drawing,places`,
+    googleMapURL: `https://maps.googleapis.com/maps/api/js?key=AIzaSyA6v47-yhaokl4cYxU7lUS4vQwgSZs-b5A&v=3.exp&libraries=geometry,drawing,places`,
     loadingElement: <div style={{ height: `100%` }} />,
     containerElement: <div style={{ height: `400px` }} />,
     mapElement: <div style={{ height: `90%` }} />,

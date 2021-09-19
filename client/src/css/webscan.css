@@ -59,10 +59,10 @@
   border-color: blue !important;
 }
 
-
-.score, .feedback{
+.score,
+.feedback {
   width: 100%;
-  font-size: 3rem;
+  font-size: 20px;
   margin: 20px;
   font-weight: bold;
   display: flex;
@@ -70,13 +70,15 @@
   align-items: center;
 }
 
-.scoreno, .feedbackval{
+.scoreno,
+.feedbackval {
   color: red;
 }
 
-.res{
+.res {
   font-weight: bold;
   text-transform: capitalize;
   color: blue;
-  font-size: 5rem;
+  font-size: 20px;
+  margin-left: 10%;
 }

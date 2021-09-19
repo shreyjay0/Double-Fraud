@@ -2,14 +2,14 @@ import React, { Component } from "react";
 import "../css/webscan.css";
 
 export class Webscan extends Component {
-  state = { website: "", score: -1, feedback: "Scam Website" };
+  state = { website: "", score: -1, feedback: "Authentic Website" };
 
   handleSubmit = (e) => {
     e.preventDefault();
     console.log(this.state.website);
     //do a post request here and send the website state to backend
     setTimeout(()=>{
-      this.setState({score:0.23})
+      this.setState({score:-0.38})
     },4000)
     this.setState({ website: "" });
   };
@@ -26,7 +26,7 @@ export class Webscan extends Component {
             <div className="feedbacktext">Feedback</div>
             <div className="feedbackval">{this.state.feedback}</div>
           </div>
-          <div className="res">Dont Open the Website!!</div>
+          <div className="res">You can use the Website!!</div>
         </div>
       );
     }else{
