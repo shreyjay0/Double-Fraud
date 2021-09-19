@@ -11,7 +11,7 @@ import {
 
 const apiKey = "KEY_HERE";
 const LocateHelp = compose(
-  {/**API KEY - AIzaSyA6v47-yhaokl4cYxU7lUS4vQwgSZs-b5A */}
+  /**API KEY - AIzaSyA6v47-yhaokl4cYxU7lUS4vQwgSZs-b5A */
   withProps({
     googleMapURL: `https://maps.googleapis.com/maps/api/js?key=${apiKey}&v=3.exp&libraries=geometry,drawing,places`,
     loadingElement: <div style={{ height: `100%` }} />,
