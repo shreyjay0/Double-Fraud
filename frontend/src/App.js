@@ -9,6 +9,8 @@ import Help from "./pages/Help";
 import Data from "./pages/dummyLib.json";
 import FullNews from "./components/fullNews/FullNews";
 import React, { Component } from 'react'
+import Register from "./pages/Register";
+import Login from './pages/Login'
 
 export class App extends Component {
 
@@ -33,7 +35,10 @@ export class App extends Component {
           <Route path="/full-news" component={FullNews} />
           <Route path="/report" component={Report} />
           <Route path="/help" component={Help} />
+          <Route path="/login" component={Login} />
+          <Route path="/register" component={Register} />
         </Switch>
+      <Register/>
       </Router>
     </div>
     )
