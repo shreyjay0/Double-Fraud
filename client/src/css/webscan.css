@@ -58,3 +58,25 @@
   color: blue !important;
   border-color: blue !important;
 }
+
+
+.score, .feedback{
+  width: 100%;
+  font-size: 3rem;
+  margin: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.scoreno, .feedbackval{
+  color: red;
+}
+
+.res{
+  font-weight: bold;
+  text-transform: capitalize;
+  color: blue;
+  font-size: 5rem;
+}

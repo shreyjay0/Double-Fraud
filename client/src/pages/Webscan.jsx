@@ -2,15 +2,38 @@ import React, { Component } from "react";
 import "../css/webscan.css";
 
 export class Webscan extends Component {
+  state = { website: "", score: -1, feedback: "Scam Website" };
 
-    state = {website:""};
+  handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(this.state.website);
+    //do a post request here and send the website state to backend
+    setTimeout(()=>{
+      this.setState({score:0.23})
+    },4000)
+    this.setState({ website: "" });
+  };
 
-    handleSubmit = (e) =>{
-        e.preventDefault();
-        console.log(this.state.website);
-        //do a post request here and send the website state to backend
-        this.setState({website:""});
+  result = () => {
+    if (this.state.score > 0) {
+      return (
+        <div>
+          <div className="score">
+            <div className="scoretext">Score</div>
+            <div className="scoreno">{this.state.score}</div>
+          </div>
+          <div className="feedback">
+            <div className="feedbacktext">Feedback</div>
+            <div className="feedbackval">{this.state.feedback}</div>
+          </div>
+          <div className="res">Dont Open the Website!!</div>
+        </div>
+      );
+    }else{
+      return null
     }
+  };
+
   render() {
     return (
       <div className="webscan">
@@ -21,8 +44,8 @@ export class Webscan extends Component {
         <br />
         <form onSubmit={this.handleSubmit} className="webscan-form">
           <input
-          className="webscan-field"
-          placeholder="Enter the Website URL here"
+            className="webscan-field"
+            placeholder="Enter the Website URL here"
             type="text"
             name="website"
             id="website"
@@ -33,8 +56,9 @@ export class Webscan extends Component {
           />
           <br />
           <br />
-          <input type="submit" value="submit" className="submit-Btn"/>
+          <input type="submit" value="submit" className="submit-Btn" />
         </form>
+        {this.result()}
       </div>
     );
   }
