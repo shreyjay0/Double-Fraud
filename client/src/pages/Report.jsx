@@ -2,30 +2,49 @@ import React, { Component } from "react";
 import { NavLink as Link } from "react-router-dom";
 
 export class Report extends Component {
-  state = { title:"", website: "", fraudType: "", description: "" , chkbox : false};
+  state = {
+    title: "",
+    website: "",
+    fraudType: "Phishing",
+    description: "",
+    chkbox: false,
+  };
 
-  onformSubmit = async()=>{
-    if(!this.state.chkbox){
+  onformSubmit = async (e) => {
+    e.preventDefault();
+    if (!this.state.chkbox) {
       alert("Check the box");
-    }else{
-      const formData = {title:this.state.title,website:this.state.website,fraudType:this.state.fraudType,description:this.state.description};
+    } else {
+      const formData = {
+        title: this.state.title,
+        website: this.state.website,
+        fraudType: this.state.fraudType,
+        description: this.state.description,
+      };
       const options = {
-        method:"PUT",
+        method: "PUT",
         headers: {
-          'Content-Type': 'application/json'
+          "Content-Type": "application/json",
         },
-        body: JSON.stringify(formData)
-      }
-      let res = await fetch('./report',options);
+        body: JSON.stringify(formData),
+      };
+      let res = await fetch("http://localhost:3030/api/post", options);
       let json = await res.json();
-      if(res.status === 200){
-        alert("Report submitted successfully");
-      }else{
-        alert("Report was not submitted successfully");
+      if (res.status === 200) {
+        alert(json);
+      } else {
+        alert(json);
       }
-      this.setState({ title:"", website: "", fraudType: "", description: "" , chkbox : false})
+      console.log(json);
+      this.setState({
+        title: "",
+        website: "",
+        fraudType: "Phishing",
+        description: "",
+        chkbox: false,
+      });
     }
-  }
+  };
 
   render() {
     return (
@@ -36,7 +55,7 @@ export class Report extends Component {
           alert{" "}
         </div>
         <form action="" className="report-form">
-        <div className="form-field">
+          <div className="form-field">
             <label htmlFor="title">Title:</label>
             <input
               type="text"
@@ -70,7 +89,6 @@ export class Report extends Component {
                 this.setState({ fraudtype: e.target.value });
               }}
             >
-           
               <option value="Phishing">Phishing</option>
               <option value="Skimming">Skimming</option>
               <option value="Monetary Scam">Scam</option>
@@ -110,7 +128,12 @@ export class Report extends Component {
             </span>
           </div>
           <div className="report-btn">
-            <button style={{"border-radius": "20px"}} onClick={this.onformSubmit}>Report</button>
+            <button
+              style={{ borderRadius: "20px" }}
+              onClick={this.onformSubmit}
+            >
+              Report
+            </button>
           </div>
         </form>
         <span className="report-msg">

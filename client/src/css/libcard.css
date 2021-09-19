@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 30%;
+    width: 25vw;
     height: 50vh;
     border: 1px solid black;
     box-shadow: 2px 2px 1px grey;
@@ -12,7 +12,6 @@
 
 .libcard-head{
     font-weight: bold;
-
 }
 
 

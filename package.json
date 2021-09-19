@@ -1,0 +1,26 @@
+{
+  "name": "double-fraud",
+  "version": "1.0.0",
+  "description": "Fraud the fraudsters",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shreyjay0/Double-Fraud.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shreyjay0/Double-Fraud/issues"
+  },
+  "homepage": "https://github.com/shreyjay0/Double-Fraud#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.6",
+    "morgan": "^1.10.0"
+  }
+}
