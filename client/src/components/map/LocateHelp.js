@@ -35,7 +35,7 @@ const LocateHelp = compose(
 
         const request = {
           bounds: bounds,
-          type: ["police", "local_government_office"],
+          type: ["police"],
         };
 
         const service = new google.maps.places.PlacesService(
