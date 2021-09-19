@@ -20,6 +20,7 @@ const useStyles = makeStyles({
     padding: "30%",
     textAlign: "center",
     paddingTop: "5% !important",
+    marginTop: 10,
   },
   home: {
     textAlign: "center",
@@ -32,7 +33,6 @@ const useStyles = makeStyles({
   content: {
     textAlign: "left",
     marginBottom: 20,
-  
   },
 });
 const FullNews = (props) => {
@@ -40,7 +40,6 @@ const FullNews = (props) => {
   const [source, setSource] = useState("");
   const [newsInfo, newsInfoUpdate] = useState([]);
   const inf = props.history.location.state.news;
-  console.log(inf);
   useEffect(() => {
     newsInfoUpdate(inf);
     setSource(inf.source.name);
