@@ -65,7 +65,7 @@ const LocateHelp = compose(
       onTilesLoaded={props.fetchPlaces}
       onBoundsChanged={props.fetchPlaces}
       defaultZoom={8}
-      defaultCenter={{ lat: 23, lng: 82 }}
+      defaultCenter={{ lat: props.lat, lng: props.lng }}
       style={{ height: "350px !important" }}
     >
       {props.places &&
