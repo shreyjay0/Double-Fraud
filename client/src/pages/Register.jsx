@@ -24,7 +24,8 @@ export default function Register() {
       body: JSON.stringify(formData),
     };
     try {
-      let res = await fetch("./api/auth/register", options);
+      let res = await fetch("http://localhost:3030/api/auth/register", options);
+      console.log(res.body);
       history.push("/login");
     } catch (err) {
       console.log(err);

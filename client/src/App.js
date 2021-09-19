@@ -20,7 +20,6 @@ function App() {
      
     const response = await fetch('http://localhost:3030/api/post');
     const data = await response.json();
-    console.log("HELLO"+data);
     setposts(data);
   },[])
 

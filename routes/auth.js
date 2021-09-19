@@ -4,14 +4,14 @@ const bcrypt = require("bcrypt");
 
 //register new user
 router.post("/register",async(req,res)=>{
-
+    console.log(req.body)
     try {
         //generate hash of pass
         const salt = await bcrypt.genSalt(10);
-        const hashed = await bcrypt.hash(req.body.password,salt);
+        const hashed = await bcrypt.hash(req.body.pass,salt);
         //create a new user
         const newUser = await new User({
-            username:req.body.username,
+            username:req.body.name,
             email:req.body.email,
             password:hashed
         })
@@ -26,10 +26,10 @@ router.post("/register",async(req,res)=>{
 //login an existing user
 router.post("/login",async(req,res)=>{
     try {
-
+        console.log(req.body);
         //Retrive user from DB
         const user = await User.findOne({email:req.body.email});
-        console.log(user+"    ");
+        console.log(req.body.email+user);
         !user && res.status(404).json("Who is u");
 
         //Validate Auth
