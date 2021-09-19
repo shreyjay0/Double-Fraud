@@ -29,6 +29,7 @@ const useStyles = makeStyles({
     fontFamily: "Montserrat",
     fontStyle: "normal",
   },
+  tHead: {},
 });
 const NewsBox = (props) => {
   const classes = useStyles();
@@ -60,7 +61,18 @@ const NewsBox = (props) => {
         </div>
         <div className={classes.cardbody}>
           <div>
-            <h6 style={{ fontWeight: "bold" }}>{props.newsInfo.title}</h6>
+            <h6
+              style={{
+                overflow: "hidden",
+                textOverflow: "ellipsis",
+                display: "-webkit-box",
+                WebkitLineClamp: 3,
+                WebkitBoxOrient: "vertical",
+                fontWeight: "bold",
+              }}
+            >
+              {props.newsInfo.title}
+            </h6>
             <p style={{ fontWeight: "normal" }}>{props.newsInfo.content}</p>
           </div>
           <div className={classes.button}>

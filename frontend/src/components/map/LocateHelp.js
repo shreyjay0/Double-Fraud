@@ -9,7 +9,7 @@ import {
   GoogleMapLoader,
 } from "react-google-maps";
 
-const apiKey = "AIzaSyA6v47-yhaokl4cYxU7lUS4vQwgSZs-b5A";
+const apiKey = "KEY_HERE";
 const LocateHelp = compose(
   withProps({
     googleMapURL: `https://maps.googleapis.com/maps/api/js?key=${apiKey}&v=3.exp&libraries=geometry,drawing,places`,
@@ -64,7 +64,7 @@ const LocateHelp = compose(
       ref={props.onMapMounted}
       onTilesLoaded={props.fetchPlaces}
       onBoundsChanged={props.fetchPlaces}
-      defaultZoom={8}
+      defaultZoom={13}
       defaultCenter={{ lat: props.lat, lng: props.lng }}
       style={{ height: "350px !important" }}
     >
