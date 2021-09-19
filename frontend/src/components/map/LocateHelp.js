@@ -11,7 +11,6 @@ import {
 
 const apiKey = "KEY_HERE";
 const LocateHelp = compose(
-  /**API KEY - AIzaSyA6v47-yhaokl4cYxU7lUS4vQwgSZs-b5A */
   withProps({
     googleMapURL: `https://maps.googleapis.com/maps/api/js?key=${apiKey}&v=3.exp&libraries=geometry,drawing,places`,
     loadingElement: <div style={{ height: `100%` }} />,
@@ -36,7 +35,7 @@ const LocateHelp = compose(
 
         const request = {
           bounds: bounds,
-          type: ["police"],
+          type: ["police", "local_government_office"],
         };
 
         const service = new google.maps.places.PlacesService(
@@ -65,7 +64,7 @@ const LocateHelp = compose(
       ref={props.onMapMounted}
       onTilesLoaded={props.fetchPlaces}
       onBoundsChanged={props.fetchPlaces}
-      defaultZoom={13}
+      defaultZoom={16}
       defaultCenter={{ lat: props.lat, lng: props.lng }}
       style={{ height: "350px !important" }}
     >

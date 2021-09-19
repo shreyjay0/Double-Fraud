@@ -12,6 +12,7 @@ export default class News extends Component {
       quant: 15,
       page: 1,
     };
+    this.goToNextPage = this.goToNextPage.bind(this);
   }
 
   getNews = async () => {
@@ -39,15 +40,16 @@ export default class News extends Component {
   componentDidMount = () => {
     this.getNews();
   };
-
+  goToNextPage = () => {
+    console.log(this.state.page);
+    console.log(this.state.page);
+  };
   render() {
     let chunk = [];
     let spl = [];
     while (this.state.news.length) {
       spl.push(this.state.news.splice(0, 3));
     }
-    console.log(spl);
-    console.log("Reer");
     spl.forEach((element, id) => {
       chunk.push(
         <div>
@@ -60,15 +62,56 @@ export default class News extends Component {
         </div>
       );
     });
-    return (
-      <div className="news-main">
-        <div className="row news-head">
-          <h3>News</h3>
-          <p>Latest personalized financial news to keep you updated. </p>
+    if (spl.length > 0) {
+      return (
+        <div className="news-main">
+          <div className="row news-head">
+            <h3>News</h3>
+            <p>Latest personalized financial news to keep you updated. </p>
+          </div>
+          <div className="main">{chunk}</div>
+          <div style={{ textAlign: "center" }}>
+            {this.state.page > 1 ? (
+              <button
+                style={{ marginRight: 10 }}
+                onClick={() => {
+                  console.log(this.state.page);
+                  const num = this.state.page - 1;
+                  this.setState({ page: num }, () => this.getNews());
+                }}
+              >
+                Last Page
+              </button>
+            ) : (
+              <div></div>
+            )}
+            {this.state.page < 5 ? (
+              <button
+                style={{ marginLeft: 10 }}
+                onClick={() => {
+                  console.log(this.state.page);
+                  const num = this.state.page + 1;
+                  this.setState({ page: num }, () => this.getNews());
+                }}
+              >
+                Next Page
+              </button>
+            ) : (
+              <div></div>
+            )}
+          </div>
         </div>
-
-        <div className="main">{chunk}</div>
-      </div>
-    );
+      );
+    } else {
+      return (
+        <div className="news-main">
+          <div className="row news-head">
+            <h3>News</h3>
+            <p>Latest personalized financial news to keep you updated. </p>
+          </div>
+          <div style={{ textAlign: "center" }}>Loading...</div>
+        </div>
+      );
+    }
   }
 }
