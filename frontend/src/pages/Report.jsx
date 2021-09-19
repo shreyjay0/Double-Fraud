@@ -70,10 +70,15 @@ export class Report extends Component {
                 this.setState({ fraudtype: e.target.value });
               }}
             >
-              <option value="abc">abc</option>
-              <option value="123">123</option>
-              <option value="qwe">qwe</option>
-              <option value="xzc">xzc</option>
+           
+              <option value="Phishing">Phishing</option>
+              <option value="Skimming">Skimming</option>
+              <option value="Monetary Scam">Scam</option>
+              <option value="Smishing">Smishing</option>
+              <option value="Identity Fraud">Identity Fraud</option>
+              <option value="Card Fraud">Card Fraud</option>
+              <option value="shopping">Online Shopping Related Fraud</option>
+              <option value="lottery">Lottery/Prize Fraud</option>
             </select>
           </div>
           <div className="form-field">

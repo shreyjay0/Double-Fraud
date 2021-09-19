@@ -105,6 +105,7 @@
   text-align: center;
   margin-top: -2%;
   margin-bottom: 2%;
+  font-family: "Montserrat";
 }
 
 .report-form {
@@ -116,6 +117,7 @@
   border: 1px solid black;
   border-radius: 20px;
   padding: 5%;
+  font-family: "Montserrat";
 }
 
 .form-field {
@@ -126,6 +128,7 @@ input,
 select,
 textarea {
   width: 100%;
+  font-family: "Montserrat";
 }
 
 .chkbox-input {
