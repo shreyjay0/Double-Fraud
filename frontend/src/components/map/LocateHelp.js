@@ -9,11 +9,10 @@ import {
   GoogleMapLoader,
 } from "react-google-maps";
 
-const google = (window.google = window.google ? window.google : {});
 const apiKey = "AIzaSyA6v47-yhaokl4cYxU7lUS4vQwgSZs-b5A";
 const LocateHelp = compose(
   withProps({
-    googleMapURL: `https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/js?key=${apiKey}&v=3.exp&libraries=geometry,drawing,places`,
+    googleMapURL: `https://maps.googleapis.com/maps/api/js?key=${apiKey}&v=3.exp&libraries=geometry,drawing,places`,
     loadingElement: <div style={{ height: `100%` }} />,
     containerElement: <div style={{ height: `400px` }} />,
     mapElement: <div style={{ height: `90%` }} />,
@@ -61,28 +60,26 @@ const LocateHelp = compose(
     new window.google.maps.Size(32, 32)
   );
   return (
-    <GoogleMapLoader>
-      <GoogleMap
-        ref={props.onMapMounted}
-        onTilesLoaded={props.fetchPlaces}
-        onBoundsChanged={props.fetchPlaces}
-        defaultZoom={8}
-        defaultCenter={{ lat: props.lat, lng: props.lng }}
-        style={{ height: "350px !important" }}
-      >
-        {props.places &&
-          props.places.map((place, i) => (
-            <Marker
-              key={i}
-              icon={newMarker}
-              position={{
-                lat: place.geometry.location.lat(),
-                lng: place.geometry.location.lng(),
-              }}
-            />
-          ))}
-      </GoogleMap>
-    </GoogleMapLoader>
+    <GoogleMap
+      ref={props.onMapMounted}
+      onTilesLoaded={props.fetchPlaces}
+      onBoundsChanged={props.fetchPlaces}
+      defaultZoom={8}
+      defaultCenter={{ lat: 23, lng: 82 }}
+      style={{ height: "350px !important" }}
+    >
+      {props.places &&
+        props.places.map((place, i) => (
+          <Marker
+            key={i}
+            icon={newMarker}
+            position={{
+              lat: place.geometry.location.lat(),
+              lng: place.geometry.location.lng(),
+            }}
+          />
+        ))}
+    </GoogleMap>
   );
 });
 

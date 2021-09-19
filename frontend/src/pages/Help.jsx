@@ -1,7 +1,7 @@
 import React from "react";
 import "../css/help.css";
+// import LocateHelp from "../components/map/LocateHelp";
 import CurrentLocation from "../components/map/CurrentLocation";
-import LocateHelp from "../components/map/LocateHelp";
 
 const Help = () => {
   return (
@@ -16,7 +16,7 @@ const Help = () => {
 
       <div className="help-map">
         {" "}
-        <LocateHelp />{" "}
+        <CurrentLocation />{" "}
       </div>
       <button> Get Numbers</button>
     </div>

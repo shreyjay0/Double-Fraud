@@ -54,8 +54,7 @@ class CurrentLocation extends React.Component {
   };
 
   render() {
-    return;
-    <LocalHelp lat={this.state.lat} lng={this.state.lng} />;
+    return <LocalHelp lat={this.state.lat} lng={this.state.lng} />;
   }
 }
 
