@@ -97,7 +97,7 @@
   font-weight: bold;
   font-size: 50px;
   line-height: 61px;
-  margin-top: 1%;
+  margin-top: 4%;
 }
 
 .report-desc {
@@ -183,17 +183,16 @@ textarea {
   margin-bottom: 4%;
 }
 
-.lib-cards{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-basis: 100%;
-    flex-wrap: wrap;
-    gap: 5em;
-    /* @media (max-width: 50em) {
+.lib-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 100%;
+  flex-wrap: wrap;
+  gap: 5em;
+  /* @media (max-width: 50em) {
         padding-inline: 2em;
         gap: 2em;
     } */
-
 }
