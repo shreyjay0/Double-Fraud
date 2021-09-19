@@ -30,11 +30,8 @@ export class Report extends Component {
       };
       let res = await fetch("http://localhost:3030/api/post", options);
       let json = await res.json();
-      if (res.status === 200) {
-        alert("Report submitted");
-      } else {
-        alert("Report not submitted");
-      }
+      alert("Report submitted");
+      console.log(json)
       this.setState({
         title: "",
         website: "",
